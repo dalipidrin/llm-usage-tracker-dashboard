@@ -11,3 +11,6 @@ npm run dev
 ```
 
 Access dashboard at `http://localhost:5173/`
+
+![Charts Screenshot](images/charts.png)
+![Table Screenshot](images/table.png)
