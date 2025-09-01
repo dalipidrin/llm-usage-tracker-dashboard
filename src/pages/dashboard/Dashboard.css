@@ -1,0 +1,23 @@
+.dashboard-wrapper {
+  padding: 24px;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.alert-box {
+  background-color: #ef4444;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+}
+
+.dashboard-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #F06422;
+  margin-bottom: 24px;
+}

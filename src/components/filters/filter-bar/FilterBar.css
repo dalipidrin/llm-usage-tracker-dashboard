@@ -1,0 +1,40 @@
+.filter-bar {
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 24px;
+  align-items: flex-end;
+}
+
+.date-filter {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.date-filter label {
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.date-filter input[type="date"] {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.date-filter input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
