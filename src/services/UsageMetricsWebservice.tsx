@@ -4,8 +4,9 @@ import type { Filters } from './models/Filters';
 import type { GroupedMetricsResponse } from './models/GroupedMetricsResponse';
 
 class UsageMetricsWebservice {
-  private summaryUrl = 'http://localhost:9000/metrics/summary';
-  private groupedUrl = 'http://localhost:9000/metrics/grouped';
+  private baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:9000';
+  private summaryUrl = `${this.baseUrl}/metrics/summary`;
+  private groupedUrl = `${this.baseUrl}/metrics/grouped`;
 
   public async getSummaryMetrics(filters: Filters): Promise<SummaryMetrics> {
     const params: any = {
